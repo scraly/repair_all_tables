@@ -1,11 +1,9 @@
 #!/bin/sh
 ###########################################################
-## RFI : 2004-12-24
 # Script qui repare toutes les tables de 
 # toutes les databases d'une base de donnees
 ############################################################
 ###########Pre-requis######################################
-#- atchik_profile avec la variable ${HOME} 
 #- repertoire tmp dans le home sirectory du compte qui lance le script
 #- repertoire logs dans le home directory du compte qui lance le script
 ################################################################ 
@@ -16,11 +14,10 @@ LOG_FILE=${HOME}/logs/repair_all_tables.log
 
 ### Parametre MYSQL ####
 MYSQL_HOST="localhost"
-#MYSQL_SOCKET="/home/goncalvesj/tmp/atchik_mysqld.sock"
+#MYSQL_SOCKET="/home/toto/tmp/atchik_mysqld.sock"
 MYSQL_PORT="3306"
 MYSQL_USER="root"
-MYSQL_PASSWORD="tbc2spome4u"
-
+MYSQL_PASSWORD="<password>"
 
 
 ####### FUNCTIONS#############
